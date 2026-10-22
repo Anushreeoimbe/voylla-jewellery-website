@@ -1,0 +1,164 @@
+
+.collection-page {
+  min-height: 100vh;
+  background: #fffdf9;
+  color: #30251f;
+  font-family: Arial, sans-serif;
+}
+
+.collection-header {
+  min-height: 75px;
+  padding: 16px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee5dc;
+}
+
+.collection-logo {
+  color: #8b542f;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.collection-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.collection-nav a,
+.collection-footer a {
+  color: #40352d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.collection-nav a:hover,
+.collection-footer a:hover {
+  color: #a16a3e;
+}
+
+.collection-hero {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  background: #e8d9c9;
+}
+
+.collection-hero > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-hero-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: rgba(35, 24, 17, 0.38);
+}
+
+.collection-hero-overlay h1 {
+  margin: 12px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 5vw, 64px);
+}
+
+.collection-hero-overlay p {
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.collection-products {
+  padding: 55px 5%;
+  text-align: center;
+}
+
+.collection-eyebrow {
+  color: #a16a3e;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.collection-products h2 {
+  margin: 12px 0 32px;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.collection-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  text-align: left;
+}
+
+.collection-product img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  display: block;
+  object-fit: cover;
+  background: #f4ede5;
+}
+
+.collection-product h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.collection-product p {
+  font-weight: bold;
+}
+
+.collection-empty {
+  color: #76685e;
+  padding: 25px;
+}
+
+.collection-footer {
+  padding: 25px 5%;
+  border-top: 1px solid #eee5dc;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .collection-header {
+    justify-content: center;
+  }
+
+  .collection-nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .collection-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .collection-hero {
+    height: 320px;
+  }
+}
+
+@media (max-width: 450px) {
+  .collection-hero {
+    height: 260px;
+  }
+
+  .collection-products h2 {
+    font-size: 26px;
+  }
+}

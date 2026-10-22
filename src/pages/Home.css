@@ -1,0 +1,639 @@
+
+.voylla-home {
+  color: #302822;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.voylla-home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.voylla-home button {
+  font: inherit;
+}
+
+.announcement {
+  padding: 10px;
+  background: #302822;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.home-header {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 12px 4%;
+  border-bottom: 1px solid #eee8e3;
+}
+
+.home-logo,
+.footer-logo {
+  font: 42px Georgia, serif;
+  letter-spacing: -2px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.footer-column a:hover {
+  color: #9a6e49;
+}
+
+.new-badge {
+  background: #b43d35;
+  color: white;
+  font-size: 8px;
+  padding: 3px 5px;
+  letter-spacing: 0.5px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-actions button,
+.mobile-menu-button {
+  border: 0;
+  background: transparent;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.mobile-menu-button,
+.mobile-nav {
+  display: none;
+}
+
+.home-hero {
+  height: 490px;
+  position: relative;
+  overflow: hidden;
+  background: #c4b2a2;
+}
+
+.hero-image,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.hero-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(25, 18, 14, 0.64),
+    rgba(25, 18, 14, 0.15),
+    rgba(25, 18, 14, 0.04)
+  );
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  color: white;
+}
+
+.hero-eyebrow,
+.section-heading > p,
+.precious-copy > p,
+.wedding-copy > p {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+
+.hero-content h1 {
+  font: 58px Georgia, serif;
+  margin: 18px 0;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 370px;
+}
+
+.hero-button,
+.outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 14px 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.hero-button {
+  background: #fff;
+  color: #302822 !important;
+}
+
+.hero-button:hover {
+  background: #e9ddd2;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #ffffff80;
+  background: #ffffff25;
+  color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 25px !important;
+}
+
+.hero-prev {
+  left: 20px;
+}
+
+.hero-next {
+  right: 20px;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dots button {
+  width: 22px;
+  height: 3px;
+  border: 0;
+  background: #ffffff80;
+  cursor: pointer;
+}
+
+.hero-dots button.active {
+  background: #fff;
+}
+
+.section-spacing {
+  padding: 65px 5%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading > p {
+  color: #9a7455;
+}
+
+.section-heading h2 {
+  font: 38px Georgia, serif;
+  margin: 12px 0;
+}
+
+.section-heading > span {
+  color: #82766f;
+  font-size: 13px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.category-image-wrap {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #f4eee8;
+}
+
+.category-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.category-card:hover img,
+.home-product:hover img {
+  transform: scale(1.04);
+}
+
+.category-card h3 {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.precious-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f4eee8;
+  align-items: center;
+}
+
+.precious-image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.precious-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.precious-copy {
+  padding: 45px 12%;
+}
+
+.precious-copy > p,
+.wedding-copy > p {
+  color: #9b7454;
+}
+
+.precious-copy h2,
+.wedding-copy h2 {
+  font: 42px Georgia, serif;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.precious-copy > span,
+.wedding-copy > span {
+  color: #766a63;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.outline-button {
+  border: 1px solid #685449;
+  background: transparent;
+}
+
+.outline-button:hover {
+  background: #302822;
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.product-image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: #f4eee8;
+}
+
+.product-image-wrap > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  background: white;
+  padding: 6px 8px;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+
+.product-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+
+.home-product h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 13px 0 8px;
+}
+
+.product-prices {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.product-prices del {
+  color: #94867d;
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.wedding-feature {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background: #b6a093;
+}
+
+.wedding-feature > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wedding-copy {
+  position: absolute;
+  inset: 0;
+  padding: 35px 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 244, 0.95),
+    rgba(255, 250, 244, 0.55),
+    transparent
+  );
+  max-width: 100%;
+}
+
+.wedding-copy h2 {
+  max-width: 450px;
+}
+
+.wedding-copy .hero-button {
+  background: #302822;
+  color: white !important;
+}
+
+.collection-links {
+  max-width: 850px;
+  margin: auto;
+  border-top: 1px solid #e9e0d9;
+}
+
+.collection-links a {
+  display: grid;
+  grid-template-columns: 55px 1fr 25px;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 5px;
+  border-bottom: 1px solid #e9e0d9;
+}
+
+.collection-links a > span {
+  color: #a58770;
+  font-size: 12px;
+}
+
+.collection-links a > strong {
+  font: 23px Georgia, serif;
+  font-weight: 400;
+}
+
+.collection-links a:hover {
+  color: #9a6e49;
+}
+
+.home-footer {
+  background: #29221f;
+  color: #f5eee7;
+  padding: 45px 5% 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 35px;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  color: #c9bdb4;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer-column h3 {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  font-size: 12px;
+  color: #d4c9c0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffffff25;
+  padding: 20px 0;
+  text-align: center;
+  color: #c9bdb4;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .desktop-nav {
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .home-header {
+    min-height: 68px;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .home-logo {
+    font-size: 36px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee8e3;
+  }
+
+  .mobile-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 0;
+    border-bottom: 1px solid #f0e9e3;
+    font-size: 13px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-actions button {
+    padding: 2px;
+  }
+
+  .header-actions button:nth-child(2),
+  .header-actions button:nth-child(3) {
+    display: none;
+  }
+
+  .home-hero {
+    height: 400px;
+  }
+
+  .hero-content {
+    left: 8%;
+    right: 8%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero-prev {
+    left: 8px;
+  }
+
+  .hero-next {
+    right: 8px;
+  }
+
+  .section-spacing {
+    padding: 45px 16px;
+  }
+
+  .section-heading h2 {
+    font-size: 31px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 12px;
+  }
+
+  .precious-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .precious-image {
+    height: 300px;
+  }
+
+  .precious-copy {
+    padding: 35px 25px;
+  }
+
+  .precious-copy h2,
+  .wedding-copy h2 {
+    font-size: 34px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 12px;
+  }
+
+  .wedding-feature {
+    height: 350px;
+  }
+
+  .wedding-copy {
+    padding: 25px;
+  }
+
+  .collection-links a > strong {
+    font-size: 19px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
